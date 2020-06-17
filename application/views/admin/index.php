@@ -9,6 +9,6 @@
     <?php $this->load->view('admin/head/meta'); ?>
 </head>
 <body>
-    <?php echo asset_url()."/img/mantap.php"; ?>
+<?php $this->load->view('admin/base/navbar'); ?>
 </body>
 </html>

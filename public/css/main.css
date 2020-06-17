@@ -1,0 +1,12 @@
+/* Navbar */
+.btn-nav-main{
+    border: none;
+    background: none;
+    padding:0;
+}
+.btn-nav-main:focus{
+    outline: 0;
+}
+.i-search{
+    border: none; 
+}
