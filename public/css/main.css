@@ -13,6 +13,12 @@
 .search-mobile{
     height: 820px;
 }
-p{
-    margin: 0;
+/* p{
+    margin: 0 !important;
+} */
+
+
+.lb{
+    height: 110px !important;
+    width: 120px !important;
 }
