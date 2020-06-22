@@ -3,14 +3,10 @@
         <div class="d-flex flex-row justify-content-between w-100 align-items-center">
             <div class="d-flex felx-row align-items-center">
                 <a class="navbar-brand font-weight-bold" href="#">Dashboard</a>
-                <!-- <form class="bg-white d-none d-sm-flex flex-row w-50">
-                    <input class="mr-sm-2 w-100 i-search px-3 py-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="my-2 my-sm-0 btn-nav-main d-flex align-items-center mr-3" type="submit"><i class="material-icons">search</i></button>
-                </form> -->
                 <div class="d-none d-sm-flex flex-row">
-                    <a href="#" class="mx-2">Lagu baru</a>
-                    <a href="#" class="mx-2">Kompetitor</a>
-                    <a href="#" class="mx-2">Statistik</a>
+                    <a href="#" class="mx-2 text-dark">Lagu baru</a>
+                    <a href="#" class="mx-2 text-dark">Kompetitor</a>
+                    <a href="#" class="mx-2 text-dark">Statistik</a>
                 </div>
             </div>
             <div class="d-flex d-sm-none flex-row align-items-center pointer profile-nav-btn" onclick="collapseMob()">
@@ -28,18 +24,17 @@
         </div>
     </div>
     <div class="container navbar-popup-m">
-        <div id="search-mobile" class="w-100 d-sm-none collapse mt-3">
-            <!-- <form class="bg-white d-flex d-sm-none flex-row w-100">
-                <input class="mr-sm-2 w-100 i-search px-3 py-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="my-2 my-sm-0 btn-nav-main d-flex align-items-center mr-3" type="submit"><i class="material-icons">search</i></button>
-            </form> -->
-            <div class="d-flex flex-row">
-                <a href="#" class="">Lagu baru</a>
-            </div>
+        <div id="search-mobile" class="w-100 d-sm-none collapse my-2">
             <div class="container d-flex flex-column align-items-start mt-3">
-                <a href="#">Profile</a>
-                <hr class="border w-100"/>
-                <a href="#">Logout</a>
+                <a href="#" class="text-dark">Profile</a>
+                <hr class="w-100"/>
+                <a href="#" class="text-dark">Lagu baru</a>
+                <hr class="w-100"/>
+                <a href="#" class="text-dark">Kompetitor</a>
+                <hr class="w-100"/>
+                <a href="#" class="text-dark">Statistik</a>
+                <hr class="w-100"/>
+                <a href="#" class="text-dark">Logout</a>
             </div>
         </div>
     </div>    
@@ -58,4 +53,7 @@
     function collapseBs(){
         $('#desktopcollapse').collapse('toggle');
     }
+    $('html').click(function(){
+        $('.collapse').collapse('hide');
+    });
 </script>
