@@ -22,3 +22,7 @@
     height: 110px !important;
     width: 120px !important;
 }
+
+.song div:first-child{
+    margin-top: 0 !important;
+}

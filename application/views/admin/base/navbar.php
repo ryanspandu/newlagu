@@ -39,8 +39,8 @@
         </div>
     </div>    
 </nav>
-<div id="desktopcollapse" class="collapse container">
-    <div class="float-right bg-light border px-2 py-2" style="width: 140px;">
+<div id="desktopcollapse" class="collapse container position-relative">
+    <div class="shadow bg-light border px-2 py-2 position-absolute" style="width: 140px; right: 0; z-index: 99;">
         <a href="#" class="d-block">Profile</a>
         <a href="#" class="d-block mt-3">Logout</a>
     </div>
