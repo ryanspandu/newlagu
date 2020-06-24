@@ -28,7 +28,9 @@
                         </div>
                     </div>
                 </div>
-                
+                <div class="col-12 mt-3 d-none d-lg-block">
+                    <img src="<?php echo asset_url();?>img/banner.jpg" width="100%" class="rounded-lg"/>
+                </div>
             </div>
         </div>
         <div class="col-12 col-sm-8 mt-4 mt-sm-0">
@@ -133,28 +135,20 @@
                         </form>
                     </div>
                     <div class="mt-3 song">
+                        <?php $no = 0; ?>
+                        <?php for($i=1; $i<=10; $i++){ ?>
                         <div class="p-3 bg-light rounded-lg d-flex flex-row mt-3">
-                            <div class="rounded-circle shadow bg-warning d-flex justify-content-center align-items-center font-weight-bold" style="width: 45px; height: 45px;">
-                                1
+                            <div class="numsong rounded-circle shadow bg-warning d-flex justify-content-center align-items-center font-weight-bold">
+                                <?php echo ++$no; ?>
                             </div>
-                            <div class="bg-primary rounded-lg ml-3 overflow-hidden" style="width: 120px; height: 110px;">
+                            <div class="bg-primary rounded-lg ml-3 overflow-hidden detailsong">
                                 <img src="" class="rounded-lg" width="120px" height="110px"/>
                             </div>
                             <div class="ml-3">
-                                <p class="">Justin Timberlake feat Snop Dogg</p>
+                                <p class="textsong">Justin Timberlake feat Snop Dogg</p>
                             </div>
                         </div>
-                        <div class="p-3 bg-light rounded-lg d-flex flex-row mt-3">
-                            <div class="rounded-circle shadow bg-warning d-flex justify-content-center align-items-center font-weight-bold" style="width: 45px; height: 45px;">
-                                2
-                            </div>
-                            <div class="bg-primary rounded-lg ml-3 overflow-hidden" style="width: 120px; height: 110px;">
-                                <img src="" class="rounded-lg" width="120px" height="110px"/>
-                            </div>
-                            <div class="ml-3">
-                                <p class="">Justin Timberlake feat Snop Dogg</p>
-                            </div>
-                        </div>
+                        <?php } ?>
                     </div>
                 </div>
             </div>

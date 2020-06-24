@@ -1,0 +1,16 @@
+@media(max-width: 576px){ 
+    .detailsong{
+        width: 70px; 
+        height: 60px;
+    }
+    .textsong{
+        font-size: 14px;
+    }
+    .numsong{
+        min-width: 30px; 
+        min-height: 30px;
+        max-width: 30px; 
+        max-height: 30px;
+        font-size: 12px;
+    }
+}

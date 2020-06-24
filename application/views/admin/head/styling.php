@@ -14,6 +14,9 @@
 <!-- Custom css -->
 <link href="<?php echo asset_url();?>css/preference.css" rel="stylesheet"/>
 <link href="<?php echo asset_url();?>css/main.css" rel="stylesheet"/>
+<link href="<?php echo asset_url();?>css/breakpoint/576px.css" rel="stylesheet"/>
+<link href="<?php echo asset_url();?>css/breakpoint/768px.css" rel="stylesheet"/>
+<link href="<?php echo asset_url();?>css/breakpoint/992px.css" rel="stylesheet"/>
 
 <!-- Custom js -->
 <script src="<?php echo asset_url(); ?>js/main.js" type="text/javascript"></script>

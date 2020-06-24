@@ -26,3 +26,13 @@
 .song div:first-child{
     margin-top: 0 !important;
 }
+
+.detailsong{
+    width: 120px; 
+    height: 110px;
+}
+
+.numsong{
+    width: 45px; 
+    height: 45px;
+}
