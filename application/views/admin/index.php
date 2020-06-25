@@ -140,7 +140,15 @@
                     <div class="mt-3 song">
                         <?php $no = 0; ?>
                         <?php for($i=1; $i<=10; $i++){ ?>
-                        <div class="p-3 bg-light rounded-lg d-flex flex-row mt-3 bgsong">
+                        <div class="p-3 bg-light rounded-lg d-flex flex-row mt-3 bgsong position-relative overflow-hidden">
+                            <div class="position-absolute w-100 h-100 hovermusic flex-row justify-content-center align-items-center" style="display: none; left: 0; top: 0; background: rgba(0, 0, 0, 0.445);">
+                                <a href="#" class="text-decoration-none px-3 py-2 border text-white rounded d-flex flex-row align-items-center">
+                                    <i class="material-icons" style="font-size: 14spx;">edit</i><p class="mb-0 ml-2">Edit</p>
+                                </a>
+                                <a href="#" class="text-decoration-none px-3 py-2 border text-white rounded d-flex flex-row align-items-center ml-3">
+                                    <i class="material-icons" style="font-size: 14spx;">delete</i><p class="mb-0 ml-2">Delete</p>
+                                </a>
+                            </div>
                             <div class="numsong rounded-circle shadow bg-warning d-flex justify-content-center align-items-center font-weight-bold">
                                 <?php echo ++$no; ?>
                             </div>
@@ -160,6 +168,19 @@
 </div>
 </body>
 <script>
+let idx;
+$('.bgsong').hover(function(){
+    idx = $(this).index() + 1;
+    $('.song div:nth-child('+ idx +') .hovermusic').addClass('d-flex', function(){
+        $('.song div:nth-child('+ idx +') .hovermusic').show(500);
+    });
+}, function(){
+    idx = $(this).index() + 1;
+    $('.song div:nth-child('+ idx +') .hovermusic').hide(500, function(){
+        $('.song div:nth-child('+ idx +') .hovermusic').removeClass('d-flex');
+    });
+});
+
 let clicked = 0;
 $('.view-music').click(function(){
     if(clicked == 0){
